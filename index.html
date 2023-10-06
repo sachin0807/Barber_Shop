@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry's Hair Styling</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <section id="banner">
+        <img src="logo.png" class="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style your Hair-Style your Life</p>
+            <div class="banner-buttons">
+                <a href="#"> <span></span>Find Out</a>
+                <a href="#"> <span></span> Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#Features">Features</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Testimonials">Testimonials</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="menu.png" id="menu">
+    </div>
+
+    <script>
+        var menuBtn=document.getElementById("menuBtn")
+        var sidenav=document.getElementById("sidenav")
+        var menu=document.getElementById("menu")
+        sidenav.style.right="-200px";
+        menuBtn.onclick=function(){
+            if(sidenav.style.right=="-200px"){
+                sidenav.style.right="0";
+                menu.src="close.png";
+            }
+            else{
+                sidenav.style.right="-200px";
+                menu.src="menu.png";
+            }
+        }
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- Features -->
+
+    <section id="Features">
+        <div class="title-text">
+            <p>Features</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="Feature-Box">
+            <div class="Features">
+                <h1>Experienced Staff</h1>
+                <div class="Features-Desc">
+                    <div class="Features-Icon">
+                        <i class="fa fa-shield" aria-hidden="true"></i>
+                    </div>
+                    <div class="Features-Text">
+                        <p>Donec eget ultricies sapi. Sed porttitor, 
+                                mauris after lob facilisis, elit sapie eleifend ligula.</p>
+                    </div>
+                </div>
+
+                <h1>Pre Booking Online</h1>
+                <div class="Features-Desc">
+                    <div class="Features-Icon">
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="Features-Text">
+                        <p>Donec eget ultricies sapi. Sed porttitor, 
+                                mauris after lob facilisis, elit sapie eleifend ligula.</p>
+                    </div>
+                </div>
+
+                <h1>Affordable Cost</h1>
+                <div class="Features-Desc">
+                    <div class="Features-Icon">
+                        <i class="fa fa-inr" aria-hidden="true"></i>
+                    </div>
+                    <div class="Features-Text">
+                        <p>Donec eget ultricies sapi. Sed porttitor, 
+                                mauris after lob facilisis, elit sapie eleifend ligula.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Features-Img">
+                <img src="barber-man.jpg">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="Services">
+        <div class="title-text">
+            <p>Services</p>
+            <h1>We Provide Better</h1>
+        </div>
+        <div class="Services-Box">
+            <div class="Single-Service">
+                <img src="pic-1.jpg">
+                <div class="overlay"></div>
+                <div class="Service-Desc">
+                    <h3>Hair-Styling</h3>
+                    <hr>
+                    <p>This is test under description of barber foundation.</p>
+                </div>
+            </div>
+            <div class="Single-Service">
+                <img src="pic-2.jpg">
+                <div class="overlay"></div>
+                <div class="Service-Desc">
+                    <h3>Beard-Trimming</h3>
+                    <hr>
+                    <p>This is test under description of barber foundation.</p>
+                </div>
+            </div>
+            <div class="Single-Service">
+                <img src="pic-3.jpg">
+                <div class="overlay"></div>
+                <div class="Service-Desc">
+                    <h3>Hair-Cut</h3>
+                    <hr>
+                    <p>This is test under description of barber foundation.</p>
+                </div>
+            </div>
+            <div class="Single-Service">
+                <img src="pic-4.jpg">
+                <div class="overlay"></div>
+                <div class="Service-Desc">
+                    <h3>Hair-Wash</h3>
+                    <hr>
+                    <p>This is test under description of barber foundation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="Testimonials">
+        <div class="title-text">
+            <p>Testimonials</p>
+            <h1>What Clients Say</h1>
+        </div>
+
+        <div class="Testimonial-row">
+            <div class="Testimonial-column">
+                <div class="user">
+                    <img src="img-1.jpg">
+                    <div class="user-info">
+                        <h5>KEN NORMAN <i class="fa fa-twitter" style="color: rgb(29, 161, 242);"></i></h5>
+                        <small>@kennorman</small>
+                    </div>
+                </div>
+                <p>Donec eget ultricies sapi.Sed porttitor, mauris after 
+                    lob facilisis, elit sapie eleifend ligula.
+                </p>
+            </div>
+            <div class="Testimonial-column">
+                <div class="user">
+                    <img src="img-2.jpg">
+                    <div class="user-info">
+                        <h5>KIARA MARRY <i class="fa fa-twitter" style="color: rgb(29, 161, 242);"></i></h5>
+                        <small>@kiara</small>
+                    </div>
+                </div>
+                <p>
+                    Donec eget ultricies sapi.
+                </p>
+            </div>
+            <div class="Testimonial-column">
+                <div class="user">
+                    <img src="img-3.jpg">
+                    <div class="user-info">
+                        <h5>DIKSH DANNY<i class="fa fa-twitter" style="color: rgb(29, 161, 242);"></i></h5>
+                        <small>@dannydis</small>
+                    </div>
+                </div>
+                <p>Donec eget ultricies sapi.Sed porttitor, mauris after 
+                    lob facilisis, elit sapie eleifend ligula.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+            <img src="footer-img.png" class="footer-img">
+        <div class="title-text">
+            <p>Contact</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 9pm</p>
+                <p><i class="fa fa-clock-o"></i>saturday and sunday - 8am to 12pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>#30 abc colony, xyz city India Y<i class="fa fa-map-marker"></i></p>
+                <p>example@gmail.com Y<i class="fa fa-paper-plane"></i></p>
+                <p>+91 9873732823 Y<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+
+        <div class="social-handles">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+            <p>Copyright Easy Tutorials YouTube Channel</p>
+        </div>
+
+    </section>
+
+</body>
+</html>
